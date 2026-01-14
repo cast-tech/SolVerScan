@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solverscan"
+version = "1.0.0"
+description = "A Python tool that works as a library and CLI"
+authors = [ { name = "Tigran Avagyan" } ]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+solverscan = "solverscan.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
